@@ -1,0 +1,23 @@
+USE [local]
+GO
+
+/****** Object:  Table [dbo].[local]    Script Date: 10/12/2022 23:21:53 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[local](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nchar](50) NULL,
+	[Phone] [nchar](50) NULL,
+	[Address] [nchar](50) NULL,
+	[Email] [nchar](50) NULL,
+ CONSTRAINT [PK_local] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
